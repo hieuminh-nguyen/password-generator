@@ -41,7 +41,8 @@ function generatePassword(){
         alert("Plese choose at least 1 type of character. ")
         generatePassword();
     }
-    var availableCharacters = availableArray1.concat(availableArray2,availableArray3,availableArray4);
+    var availableCharacters = [];
+    availableCharacters = availableCharacters.concat(availableArray1,availableArray2,availableArray3,availableArray4);
     //console.log(availableCharacters);
 
     var filtered = availableCharacters.filter(function(element){
